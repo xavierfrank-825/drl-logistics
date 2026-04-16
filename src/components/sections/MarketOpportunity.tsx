@@ -28,7 +28,6 @@ export default function MarketOpportunity() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 perspective-1000">
           {MARKET_OPPORTUNITIES.map((item, index) => {
             const Icon = iconMap[item.icon];
-            const bgImage = `https://picsum.photos/seed/${item.title.toLowerCase()}/800/600`;
             
             return (
               <motion.div

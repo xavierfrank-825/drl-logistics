@@ -11,10 +11,10 @@ export default function Logo({ className = "", variant = 'dark' }: LogoProps) {
   // 2. h-[140%] combined with translate-y can cause the logo to be cut off at the top or bottom.
   // 3. Aspect ratio was forced, which might squash the logo if the container doesn't match.
 
-  // RECOMMENDATION: Upload a single, transparent PNG logo to /src/assets/logo.png 
+  // RECOMMENDATION: Upload a single, transparent PNG logo to /assets/sections/logo.png 
   // and use it directly without complex cropping.
   
-  const logoUrl = "https://storage.googleapis.com/static-studio-prod/antigravity/antigravity-attachments/1744802728483_dlr_logistics_logo_updated.jpg";
+  const logoUrl = "/assets/sections/logo.jpg";
 
   return (
     <div className={`relative overflow-hidden flex items-center justify-center ${className}`}>
