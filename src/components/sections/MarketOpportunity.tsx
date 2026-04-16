@@ -12,9 +12,9 @@ const iconMap: Record<string, any> = {
 
 export default function MarketOpportunity() {
   return (
-    <section id="market" className="py-32 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-8 relative z-10">
-        <div className="text-center mb-24">
+    <section id="market" className="py-24 md:py-32 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
+        <div className="text-center mb-16 md:mb-24">
           <div className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
             <span className="w-2 h-2 bg-secondary rounded-full animate-ping" />
             <span className="text-[10px] font-bold uppercase tracking-[2px] text-secondary">Market Analysis</span>
@@ -25,9 +25,11 @@ export default function MarketOpportunity() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 perspective-1000">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 perspective-1000">
           {MARKET_OPPORTUNITIES.map((item, index) => {
             const Icon = iconMap[item.icon];
+            const bgImage = `https://picsum.photos/seed/${item.title.toLowerCase()}/800/600`;
+            
             return (
               <motion.div
                 key={item.title}
@@ -38,14 +40,29 @@ export default function MarketOpportunity() {
                 whileHover={{ y: -10, rotateY: 5 }}
                 className="preserve-3d"
               >
-                <div className="glass p-12 h-full rounded-[3rem] border-white/5 hover:border-secondary/30 transition-all duration-500 group">
-                  <div className="w-20 h-20 bg-secondary/10 rounded-3xl flex items-center justify-center text-secondary mb-10 group-hover:bg-secondary group-hover:text-white transition-all duration-300 shadow-[0_0_30px_rgba(155,46,255,0.1)]">
-                    {Icon && <Icon size={32} />}
+                <div className="glass h-full rounded-[2.5rem] md:rounded-[3rem] border-white/5 hover:border-secondary/30 transition-all duration-500 group overflow-hidden flex flex-col">
+                  <div className="aspect-[16/9] overflow-hidden relative">
+                    <img 
+                      src={`/market-${item.title.toLowerCase()}.jpg`} 
+                      alt={item.title} 
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+                    
+                    <div className="absolute top-6 left-6">
+                      <div className="w-12 h-12 md:w-14 md:h-14 glass rounded-xl md:rounded-2xl flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all duration-300 shadow-[0_0_30px_rgba(80,100,40,0.1)]">
+                        {Icon && <Icon className="w-6 h-6 md:w-8 md:h-8" />}
+                      </div>
+                    </div>
                   </div>
-                  <h4 className="text-2xl font-black mb-6 uppercase tracking-tight group-hover:text-secondary transition-colors">{item.title}</h4>
-                  <p className="text-lg text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">
-                    {item.description}
-                  </p>
+
+                  <div className="p-8 md:p-10 flex flex-col flex-grow">
+                    <h4 className="text-xl md:text-2xl font-black mb-4 md:mb-6 uppercase tracking-tight group-hover:text-secondary transition-colors">{item.title}</h4>
+                    <p className="text-base md:text-lg text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             );

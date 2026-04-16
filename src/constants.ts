@@ -1,14 +1,14 @@
 import { Product, MarketOpportunity, BusinessModelStep } from './types';
 
 export const PRODUCTS: Product[] = [
-  { id: 'GC-2502', name: 'GC-2502 Premium Gaming Chair', image: 'https://picsum.photos/seed/gc2502/400/400', priceInr: 2695.6, priceUsd: 29.30, units: 56 },
-  { id: 'GC-2503', name: 'GC-2503 Premium Gaming Chair', image: 'https://picsum.photos/seed/gc2503/400/400', priceInr: 2760, priceUsd: 30.00, units: 55 },
-  { id: 'GC-2504', name: 'GC-2504 Premium Gaming Chair', image: 'https://picsum.photos/seed/gc2504/400/400', priceInr: 2649.6, priceUsd: 28.80, units: 56 },
-  { id: 'GC-2505', name: 'GC-2505 Premium Gaming Chair', image: 'https://picsum.photos/seed/gc2505/400/400', priceInr: 2649.6, priceUsd: 28.80, units: 56 },
-  { id: 'GC-2506', name: 'GC-2506 Premium Gaming Chair', image: 'https://picsum.photos/seed/gc2506/400/400', priceInr: 2695.6, priceUsd: 29.30, units: 56 },
-  { id: 'GC-2404', name: 'GC-2404 Premium Gaming Chair', image: 'https://picsum.photos/seed/gc2404/400/400', priceInr: 2346, priceUsd: 25.50, units: 56 },
-  { id: 'YGC501', name: 'YGC501 Premium Gaming Chair', image: 'https://picsum.photos/seed/ygc501/400/400', priceInr: 2760, priceUsd: 23.50, units: 55 },
-  { id: 'YGC501-B', name: 'YGC501-B Premium Gaming Chair', image: 'https://picsum.photos/seed/ygc501b/400/400', priceInr: 1748, priceUsd: 19.00, units: 56 },
+  { id: 'GC-2502', name: 'GC-2502 Premium Gaming Chair', image: '/product-gc2502.jpg', priceInr: 2695.6, priceUsd: 29.30, units: 56 },
+  { id: 'GC-2503', name: 'GC-2503 Premium Gaming Chair', image: '/product-gc2503.jpg', priceInr: 2760, priceUsd: 30.00, units: 55 },
+  { id: 'GC-2504', name: 'GC-2504 Premium Gaming Chair', image: '/product-gc2504.jpg', priceInr: 2649.6, priceUsd: 28.80, units: 56 },
+  { id: 'GC-2505', name: 'GC-2505 Premium Gaming Chair', image: '/product-gc2505.jpg', priceInr: 2649.6, priceUsd: 28.80, units: 56 },
+  { id: 'GC-2506', name: 'GC-2506 Premium Gaming Chair', image: '/product-gc2506.jpg', priceInr: 2695.6, priceUsd: 29.30, units: 56 },
+  { id: 'GC-2404', name: 'GC-2404 Premium Gaming Chair', image: '/product-gc2404.jpg', priceInr: 2346, priceUsd: 25.50, units: 56 },
+  { id: 'YGC501', name: 'YGC501 Premium Gaming Chair', image: '/product-ygc501.jpg', priceInr: 2760, priceUsd: 23.50, units: 55 },
+  { id: 'YGC501-B', name: 'YGC501-B Premium Gaming Chair', image: '/product-ygc501b.jpg', priceInr: 1748, priceUsd: 19.00, units: 56 },
 ];
 
 export const MARKET_OPPORTUNITIES: MarketOpportunity[] = [

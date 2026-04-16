@@ -12,18 +12,18 @@
     --card-foreground: oklch(0.95 0.01 260);
     --popover: oklch(0.12 0.03 260);
     --popover-foreground: oklch(0.95 0.01 260);
-    --primary: oklch(0.6 0.2 200); /* Cyan/Electric Blue */
+    --primary: oklch(0.6 0.12 140); /* Moss Green from Logo */
     --primary-foreground: oklch(1 0 0);
-    --secondary: oklch(0.6 0.2 300); /* Purple/Magenta */
+    --secondary: oklch(0.5 0.1 140); /* Darker Green */
     --secondary-foreground: oklch(1 0 0);
-    --muted: oklch(0.95 0.01 260 / 20%);
-    --muted-foreground: oklch(0.95 0.01 260 / 60%);
-    --accent: oklch(0.6 0.2 200);
+    --muted: oklch(0.95 0.01 140 / 20%);
+    --muted-foreground: oklch(0.95 0.01 140 / 60%);
+    --accent: oklch(0.6 0.12 140);
     --accent-foreground: oklch(1 0 0);
     --destructive: oklch(0.577 0.245 27.325);
     --border: oklch(1 0 0 / 10%);
     --input: oklch(1 0 0 / 15%);
-    --ring: oklch(0.6 0.2 200);
+    --ring: oklch(0.6 0.12 140);
     --radius: 1rem;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .text-glow {
-    text-shadow: 0 0 20px oklch(0.6 0.2 200 / 0.5);
+    text-shadow: 0 0 20px oklch(0.6 0.12 140 / 0.5);
 }
 
 .perspective-1000 {
