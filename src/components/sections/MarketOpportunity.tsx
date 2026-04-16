@@ -43,7 +43,7 @@ export default function MarketOpportunity() {
                 <div className="glass h-full rounded-[2.5rem] md:rounded-[3rem] border-white/5 hover:border-secondary/30 transition-all duration-500 group overflow-hidden flex flex-col">
                   <div className="aspect-[16/9] overflow-hidden relative">
                     <img 
-                      src={`/market-${item.title.toLowerCase()}.jpg`} 
+                      src={`/assets/sections/market-${item.title.toLowerCase()}.jpg`} 
                       alt={item.title} 
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       referrerPolicy="no-referrer"

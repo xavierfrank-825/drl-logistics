@@ -20,7 +20,7 @@ export default function About() {
             >
               <div className="aspect-[4/5] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden bg-slate-900 flex items-center justify-center relative group">
                 <img 
-                  src="/about-vision.jpg" 
+                  src="/assets/sections/about-vision.jpg" 
                   alt="Vision" 
                   className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700"
                   referrerPolicy="no-referrer"
@@ -48,7 +48,7 @@ export default function About() {
               className="absolute -bottom-6 md:-bottom-12 -right-6 md:-right-12 w-32 h-32 md:w-64 md:h-64 glass p-4 md:p-8 rounded-2xl md:rounded-3xl border-primary/20 shadow-2xl flex items-center justify-center overflow-hidden"
             >
               <img 
-                src="/about-security.jpg" 
+                src="/assets/sections/about-security.jpg" 
                 alt="Security" 
                 className="absolute inset-0 w-full h-full object-cover opacity-20"
                 referrerPolicy="no-referrer"
@@ -88,7 +88,7 @@ export default function About() {
             <div className="mt-12 md:mt-16 grid grid-cols-2 gap-6 md:gap-12">
               <div className="glass p-6 md:p-8 rounded-2xl md:rounded-3xl border-white/5 relative overflow-hidden group">
                 <img 
-                  src="/about-experience.jpg" 
+                  src="/assets/sections/about-experience.jpg" 
                   alt="Experience" 
                   className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-20 transition-opacity duration-500"
                   referrerPolicy="no-referrer"
@@ -100,7 +100,7 @@ export default function About() {
               </div>
               <div className="glass p-6 md:p-8 rounded-2xl md:rounded-3xl border-white/5 relative overflow-hidden group">
                 <img 
-                  src="/about-partners.jpg" 
+                  src="/assets/sections/about-partners.jpg" 
                   alt="Partners" 
                   className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-20 transition-opacity duration-500"
                   referrerPolicy="no-referrer"

@@ -42,7 +42,7 @@ export default function BusinessModel() {
                 <div className="glass h-full rounded-[2rem] md:rounded-[2.5rem] border-white/5 hover:border-primary/30 transition-all duration-500 group flex flex-col overflow-hidden">
                   <div className="aspect-video overflow-hidden relative">
                     <img 
-                      src={`/step-${index + 1}.jpg`} 
+                      src={`/assets/sections/step-${index + 1}.jpg`} 
                       alt={step.title} 
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       referrerPolicy="no-referrer"

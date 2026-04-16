@@ -63,7 +63,7 @@ export default function Hero() {
               <div className="glass p-4 rounded-[3rem] border-white/10 shadow-2xl overflow-hidden relative">
                 <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden relative bg-slate-900 flex items-center justify-center group">
                   <img 
-                    src="/hero-gaming.jpg" 
+                    src="/assets/sections/hero-gaming.jpg" 
                     alt="Gaming Ecosystem" 
                     className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700"
                     referrerPolicy="no-referrer"
