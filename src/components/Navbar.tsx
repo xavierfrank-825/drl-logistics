@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from '../assets/logo.PNG';  // Adjust path based on your logo location
+const logo = '/logo.png';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
