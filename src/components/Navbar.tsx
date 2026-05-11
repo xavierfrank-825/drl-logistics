@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import Logo from './Logo';
+import logo from '../assets/logo.PNG';  // Adjust path based on your logo location
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -34,7 +34,12 @@ export default function Navbar() {
           scrolled ? "shadow-[0_0_30px_rgba(122,147,66,0.2)] border-primary/20" : ""
         }`}>
           <div className="flex items-center gap-3 group cursor-pointer">
-            <Logo className="w-16 md:w-20 h-auto rounded-lg overflow-hidden" />
+            {/* ✅ Updated: Use img tag with imported logo */}
+            <img 
+              src={logo} 
+              alt="DLR Logistics Logo" 
+              className="w-12 h-12 md:w-16 md:h-16 object-contain rounded-lg"
+            />
             <span className="font-black text-lg md:text-xl tracking-tighter uppercase text-glow group-hover:tracking-widest transition-all duration-500">
               DLR.LOGS
             </span>

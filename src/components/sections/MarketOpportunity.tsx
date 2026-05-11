@@ -41,13 +41,13 @@ export default function MarketOpportunity() {
               >
                 <div className="glass h-full rounded-[2.5rem] md:rounded-[3rem] border-white/5 hover:border-secondary/30 transition-all duration-500 group overflow-hidden flex flex-col">
                   <div className="aspect-[16/9] overflow-hidden relative">
+                    {/* ✅ FIXED: Use item.image instead of dynamic path */}
                     <img 
-                      src={`/assets/sections/market-${item.title.toLowerCase()}.jpg`} 
+                      src={item.image}  // Changed this line
                       alt={item.title} 
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                      referrerPolicy="no-referrer"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+
                     
                     <div className="absolute top-6 left-6">
                       <div className="w-12 h-12 md:w-14 md:h-14 glass rounded-xl md:rounded-2xl flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all duration-300 shadow-[0_0_30px_rgba(80,100,40,0.1)]">
@@ -70,7 +70,7 @@ export default function MarketOpportunity() {
       </div>
 
       {/* Background Decorative Elements */}
-      <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[150px] translate-y-1/2" />
+
     </section>
   );
 }

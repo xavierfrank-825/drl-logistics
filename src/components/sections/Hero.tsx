@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Box, Zap, ArrowRight } from 'lucide-react';
+import hero from '../../assets/hero-gaming.JPG';  // ✅ Imported but not used
 
 export default function Hero() {
   return (
@@ -62,11 +63,11 @@ export default function Hero() {
             >
               <div className="glass p-4 rounded-[3rem] border-white/10 shadow-2xl overflow-hidden relative">
                 <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden relative bg-slate-900 flex items-center justify-center group">
+                  {/* ✅ FIXED: Use the imported hero image */}
                   <img 
-                    src="/assets/sections/hero-gaming.jpg" 
+                    src={hero}  // Changed from hardcoded path
                     alt="Gaming Ecosystem" 
                     className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700"
-                    referrerPolicy="no-referrer"
                   />
                   <motion.div
                     animate={{ rotate: 360 }}
@@ -80,7 +81,7 @@ export default function Hero() {
                   
                   <div className="absolute bottom-8 left-8 right-8 z-30">
                     <div className="glass-dark p-6 rounded-2xl border-white/10">
-                      <p className="text-[10px] font-bold uppercase tracking-[2px] text-primary mb-2">Current Project</p>
+                      {/* <p className="text-[10px] font-bold uppercase tracking-[2px] text-primary mb-2">Current Project</p> */}
                       <h4 className="text-2xl font-black uppercase tracking-tight mb-4">Gaming Ecosystem</h4>
                       <div className="flex items-center justify-between">
                         <div className="flex -space-x-2">

@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Mail, MapPin, Phone, Instagram, Twitter, Linkedin } from 'lucide-react';
-import Logo from '../Logo';
+// Import the actual image file - fix the path and filename
+import logo1 from '../../assets/logo1.JPG';  // Adjust path based on where logo1.JPG is located
 
 export default function Contact() {
   return (
@@ -17,7 +18,7 @@ export default function Contact() {
               <div className="space-y-6 md:space-y-8 max-w-md mx-auto lg:mx-0">
                 <div className="flex items-center gap-4 md:gap-6 group cursor-pointer justify-center lg:justify-start">
                   <div className="w-12 h-12 md:w-14 md:h-14 glass rounded-xl md:rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                    <Mail size={20} md:size={24} />
+                    <Mail size={20} />
                   </div>
                   <div className="text-left">
                     <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-[2px] text-muted-foreground">Email Us</p>
@@ -27,7 +28,7 @@ export default function Contact() {
 
                 <div className="flex items-center gap-4 md:gap-6 group cursor-pointer justify-center lg:justify-start">
                   <div className="w-12 h-12 md:w-14 md:h-14 glass rounded-xl md:rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                    <MapPin size={20} md:size={24} />
+                    <MapPin size={20} />
                   </div>
                   <div className="text-left">
                     <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-[2px] text-muted-foreground">Location</p>
@@ -44,7 +45,7 @@ export default function Contact() {
                     whileHover={{ y: -5, scale: 1.1 }}
                     className="w-10 h-10 md:w-12 md:h-12 glass rounded-lg md:rounded-xl flex items-center justify-center text-muted-foreground hover:text-primary transition-colors"
                   >
-                    <Icon size={18} md:size={20} />
+                    <Icon size={18} />
                   </motion.a>
                 ))}
               </div>
@@ -76,7 +77,12 @@ export default function Contact() {
 
           <div className="mt-16 md:mt-24 pt-8 md:pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
             <div className="flex items-center gap-3">
-              <Logo className="w-12 h-auto rounded flex items-center justify-center overflow-hidden" />
+              {/* Use img tag with the imported logo */}
+              <img 
+                src={logo1} 
+                alt="DLR Logistics Logo" 
+                className="w-12 h-auto rounded object-contain"
+              />
               <span className="font-black uppercase tracking-tighter">DLR.LOGS</span>
             </div>
             <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-[2px] text-muted-foreground text-center">

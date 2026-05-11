@@ -1,50 +1,92 @@
 import { Product, MarketOpportunity, BusinessModelStep } from './types';
 
-export const PRODUCTS: Product[] = [
-  { id: 'GC-2502', name: 'GC-2502 Premium Gaming Chair', image: '/assets/products/gc2502.jpg', priceInr: 2695.6, priceUsd: 29.30, units: 56 },
-  { id: 'GC-2503', name: 'GC-2503 Premium Gaming Chair', image: '/assets/products/gc2503.jpg', priceInr: 2760, priceUsd: 30.00, units: 55 },
-  { id: 'GC-2504', name: 'GC-2504 Premium Gaming Chair', image: '/assets/products/gc2504.jpg', priceInr: 2649.6, priceUsd: 28.80, units: 56 },
-  { id: 'GC-2505', name: 'GC-2505 Premium Gaming Chair', image: '/assets/products/gc2505.jpg', priceInr: 2649.6, priceUsd: 28.80, units: 56 },
-  { id: 'GC-2506', name: 'GC-2506 Premium Gaming Chair', image: '/assets/products/gc2506.jpg', priceInr: 2695.6, priceUsd: 29.30, units: 56 },
-  { id: 'GC-2404', name: 'GC-2404 Premium Gaming Chair', image: '/assets/products/gc2404.jpg', priceInr: 2346, priceUsd: 25.50, units: 56 },
-  { id: 'YGC501', name: 'YGC501 Premium Gaming Chair', image: '/assets/products/ygc501.jpg', priceInr: 2760, priceUsd: 23.50, units: 55 },
-  { id: 'YGC501-B', name: 'YGC501-B Premium Gaming Chair', image: '/assets/products/ygc501b.jpg', priceInr: 1748, priceUsd: 19.00, units: 56 },
-];
+// Import images directly
+import c1 from "./assets/c1.JPG";
+import gc2503 from './assets/gc2503.JPG';
+import gc2504 from './assets/gc2504.JPG';
+import gc2505 from './assets/gc2505.JPG';
+import gc2506 from './assets/gc2506.JPG';
+import gc2404 from './assets/gc2404.JPG';
+import ygc501 from './assets/ygc501.JPG';
+import ygc501b from './assets/ygc501b.JPG';
+// import sourcing from './assets/sourcing.jpg';
+import Expansions from './assets/expansions.JPG';
+import lifestyle from './assets/lifestyle.JPG';
+import ecosystem from './assets/ecosystem.JPG';
+import Shift from './assets/Shift.JPG';
+import oppurnity from './assets/oppurnity.JPG';
 
+import sourcing from './assets/sourcing.JPG';
+import logistics from './assets/logistics.JPG';
+import process from './assets/process.JPG';
+import clients from './assets/clients.JPG';
+import focus from './assets/focus.JPG'; 
+
+
+export const PRODUCTS: Product[] = [
+  { id: 'GC-2502', name: 'GC-2502 Premium Gaming Chair', image: c1, priceInr: 2695.6, priceUsd: 29.30, units: 56 },
+  { id: 'GC-2503', name: 'GC-2503 Premium Gaming Chair', image: gc2503, priceInr: 2760, priceUsd: 30.00, units: 55 },
+  { id: 'GC-2504', name: 'GC-2504 Premium Gaming Chair', image: gc2504, priceInr: 2649.6, priceUsd: 28.80, units: 56 },
+  { id: 'GC-2505', name: 'GC-2505 Premium Gaming Chair', image: gc2505, priceInr: 2649.6, priceUsd: 28.80, units: 56 },
+  { id: 'GC-2506', name: 'GC-2506 Premium Gaming Chair', image: gc2506, priceInr: 2695.6, priceUsd: 29.30, units: 56 },
+  { id: 'GC-2404', name: 'GC-2404 Premium Gaming Chair', image: gc2404, priceInr: 2346, priceUsd: 25.50, units: 56 },
+  { id: 'YGC501', name: 'YGC501 Premium Gaming Chair', image: ygc501, priceInr: 2760, priceUsd: 23.50, units: 55 },
+  { id: 'YGC501-B', name: 'YGC501-B Premium Gaming Chair', image: ygc501b, priceInr: 1748, priceUsd: 19.00, units: 56 },
+];
 export const MARKET_OPPORTUNITIES: MarketOpportunity[] = [
   {
     title: 'Expansion',
     description: 'The gaming industry is rapidly scaling across global markets, creating sustained demand for gaming infrastructure and accessories.',
-    icon: 'Globe',
+    image: Expansions,
   },
   {
     title: 'Lifestyle',
     description: 'Increasing screen time and extended gaming or work sessions are driving the need for ergonomic and comfort-focused seating solutions.',
-    icon: 'User',
+    image: lifestyle,
   },
   {
     title: 'Ecosystem',
     description: 'The rise of esports, gaming cafés, and personalized gaming setups is fueling consistent demand for high-quality gaming chairs.',
-    icon: 'Gamepad2',
+    image: ecosystem,
   },
   {
     title: 'Shift',
     description: 'The hybrid work culture has significantly increased the adoption of ergonomic chairs for both professional and personal use.',
-    icon: 'Laptop',
+    image: Shift,
   },
   {
     title: 'Opportunity',
     description: 'A strong B2B resale market with high-volume purchasing potential, offering scalable and profitable business opportunities.',
-    icon: 'TrendingUp',
+    image: oppurnity,
   },
 ];
 
 export const BUSINESS_MODEL_STEPS: BusinessModelStep[] = [
-  { title: 'Sourcing', description: 'Specialized in sourcing high-demand products for B2B markets.' },
-  { title: 'Focus', description: 'Core focus on premium gaming chairs.' },
-  { title: 'Logistics', description: 'End-to-end supply chain management.' },
-  { title: 'Process', description: 'Procurement → Quality Check → Delivery.' },
-  { title: 'Clients', description: 'Serving retailers, distributors, gaming cafés & corporate buyers.' },
+  { 
+    title: 'Sourcing', 
+    description: 'Specialized in sourcing high-demand products for B2B markets.',
+    image: sourcing  // ✅ Using sourcing image
+  },
+  { 
+    title: 'Focus', 
+    description: 'Core focus on premium gaming chairs.',
+    image: focus  // ✅ Changed from sourcing to focus
+  },
+  { 
+    title: 'Logistics', 
+    description: 'End-to-end supply chain management.',
+    image: logistics  // ✅ Using logistics image
+  },
+  { 
+    title: 'Process', 
+    description: 'Procurement → Quality Check → Delivery.',
+    image: process  // ✅ Changed from sourcing to process
+  },
+  { 
+    title: 'Clients', 
+    description: 'Serving retailers, distributors, gaming cafés & corporate buyers.',
+    image: clients  // ✅ Changed from sourcing to clients
+  },
 ];
 
 export const CONTACT_INFO = {

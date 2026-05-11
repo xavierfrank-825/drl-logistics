@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+
 import { BUSINESS_MODEL_STEPS } from '@/src/constants';
 
 export default function BusinessModel() {
@@ -30,23 +31,33 @@ export default function BusinessModel() {
                 whileInView={{ opacity: 1, y: 0, rotateY: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                whileHover={{ 
+                whileHover={{
                   y: -10,
                   rotateY: 5,
-                  scale: 1.02
+                  scale: 1.02,
                 }}
                 className="preserve-3d"
               >
                 <div className="glass h-full rounded-[2rem] md:rounded-[2.5rem] border-white/5 hover:border-primary/30 transition-all duration-500 group flex flex-col overflow-hidden">
                   <div className="aspect-video overflow-hidden relative">
-                    <img 
-                      src={`/assets/sections/step-${index + 1}.jpg`} 
-                      alt={step.title} 
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                      referrerPolicy="no-referrer"
+                    {/* Animated image with blur + scale reveal */}
+                    <motion.img
+                      src={step.image}
+                      alt={step.title}
+                      className="w-full h-full object-cover"
+                      initial={{ scale: 1.15, filter: 'blur(8px)', opacity: 0 }}
+                      whileInView={{ scale: 1, filter: 'blur(0px)', opacity: 1 }}
+                      whileHover={{ scale: 1.08 }}
+                      transition={{
+                        duration: 0.9,
+                        delay: index * 0.08,
+                        ease: 'easeOut',
+                      }}
+                      viewport={{ once: true }}
                     />
+
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-                    
+
                     <div className="absolute top-4 left-4">
                       <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 glass rounded-xl flex items-center justify-center text-primary font-black text-lg md:text-xl group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(122,147,66,0.1)]">
                         0{index + 1}
@@ -55,7 +66,9 @@ export default function BusinessModel() {
                   </div>
 
                   <div className="p-6 md:p-8 flex flex-col flex-grow">
-                    <h4 className="text-lg md:text-xl font-black mb-3 md:mb-4 uppercase tracking-tight group-hover:text-primary transition-colors">{step.title}</h4>
+                    <h4 className="text-lg md:text-xl font-black mb-3 md:mb-4 uppercase tracking-tight group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h4>
                     <p className="text-xs md:text-sm text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">
                       {step.description}
                     </p>

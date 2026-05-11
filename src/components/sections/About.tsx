@@ -1,5 +1,9 @@
 import { motion } from 'motion/react';
 import { Shield, Globe, Zap } from 'lucide-react';
+import aboutVision from '../../assets/about-vision.JPG';  // Fixed import name
+import aboutSecurity from '../../assets/about-security.JPG';  // You need this image
+import aboutExperience from '../../assets/about-experience.JPG';  // You need this image
+import aboutPartners from '../../assets/about-partners.JPG';  // You need this image
 
 export default function About() {
   return (
@@ -19,11 +23,11 @@ export default function About() {
               className="glass p-3 md:p-4 rounded-[2rem] md:rounded-[2.5rem] border-white/5 shadow-2xl preserve-3d"
             >
               <div className="aspect-[4/5] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden bg-slate-900 flex items-center justify-center relative group">
+                {/* ✅ FIXED: Use imported image */}
                 <img 
-                  src="/assets/sections/about-vision.jpg" 
+                  src={aboutVision}  // Changed from hardcoded path
                   alt="Vision" 
                   className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700"
-                  referrerPolicy="no-referrer"
                 />
                 <motion.div
                   animate={{ 
@@ -48,10 +52,9 @@ export default function About() {
               className="absolute -bottom-6 md:-bottom-12 -right-6 md:-right-12 w-32 h-32 md:w-64 md:h-64 glass p-4 md:p-8 rounded-2xl md:rounded-3xl border-primary/20 shadow-2xl flex items-center justify-center overflow-hidden"
             >
               <img 
-                src="/assets/sections/about-security.jpg" 
+                src={aboutSecurity}  // ✅ FIXED: Use imported image
                 alt="Security" 
                 className="absolute inset-0 w-full h-full object-cover opacity-20"
-                referrerPolicy="no-referrer"
               />
               <div className="w-full h-full rounded-xl md:rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary relative z-10">
                 <Shield className="w-12 h-12 md:w-16 md:h-16" strokeWidth={1} />
@@ -88,10 +91,9 @@ export default function About() {
             <div className="mt-12 md:mt-16 grid grid-cols-2 gap-6 md:gap-12">
               <div className="glass p-6 md:p-8 rounded-2xl md:rounded-3xl border-white/5 relative overflow-hidden group">
                 <img 
-                  src="/assets/sections/about-experience.jpg" 
+                  src={aboutExperience}  // ✅ FIXED: Use imported image
                   alt="Experience" 
                   className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-20 transition-opacity duration-500"
-                  referrerPolicy="no-referrer"
                 />
                 <div className="relative z-10">
                   <p className="text-3xl md:text-4xl font-black text-primary mb-1 md:mb-2">10+</p>
@@ -100,10 +102,9 @@ export default function About() {
               </div>
               <div className="glass p-6 md:p-8 rounded-2xl md:rounded-3xl border-white/5 relative overflow-hidden group">
                 <img 
-                  src="/assets/sections/about-partners.jpg" 
+                  src={aboutPartners}  // ✅ FIXED: Use imported image
                   alt="Partners" 
                   className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-20 transition-opacity duration-500"
-                  referrerPolicy="no-referrer"
                 />
                 <div className="relative z-10">
                   <p className="text-3xl md:text-4xl font-black text-secondary mb-1 md:mb-2">500+</p>
