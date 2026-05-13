@@ -34,12 +34,12 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 md:gap-6">
-              <button className="bg-primary hover:bg-primary/80 text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-bold uppercase text-[11px] md:text-[12px] tracking-[2px] transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(122,147,66,0.4)]">
+              <a href="#model" className="bg-primary hover:bg-primary/80 text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-bold uppercase text-[11px] md:text-[12px] tracking-[2px] transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(122,147,66,0.4)]">
                 Explore Model
-              </button>
-              <button className="glass hover:bg-white/10 text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-bold uppercase text-[11px] md:text-[12px] tracking-[2px] transition-all duration-300">
+              </a>
+              <a href="#products" className="glass hover:bg-white/10 text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-bold uppercase text-[11px] md:text-[12px] tracking-[2px] transition-all duration-300">
                 View Products
-              </button>
+              </a>
             </div>
           </motion.div>
 

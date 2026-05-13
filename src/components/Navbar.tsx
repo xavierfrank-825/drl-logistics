@@ -26,11 +26,11 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "py-4" : "py-6 md:py-8"
+        scrolled ? "py-3" : "py-4 md:py-5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className={`glass rounded-full px-6 md:px-8 py-3 md:py-4 flex items-center justify-between transition-all duration-500 ${
+        <div className={`glass rounded-full px-5 md:px-6 py-2 md:py-3 flex items-center justify-between transition-all duration-500 ${
           scrolled ? "shadow-[0_0_30px_rgba(122,147,66,0.2)] border-primary/20" : ""
         }`}>
           <div className="flex items-center gap-3 group cursor-pointer">
@@ -38,7 +38,7 @@ export default function Navbar() {
             <img 
               src={logo} 
               alt="DLR Logistics Logo" 
-              className="w-12 h-12 md:w-16 md:h-16 object-contain rounded-lg"
+              className="w-10 h-10 md:w-14 md:h-14 object-contain rounded-lg"
             />
             <span className="font-black text-lg md:text-xl tracking-tighter uppercase text-glow group-hover:tracking-widest transition-all duration-500">
               DLR.LOGS
@@ -60,9 +60,9 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-4">
-            <button className="hidden sm:block bg-primary hover:bg-primary/80 text-white px-6 py-2 rounded-full font-bold uppercase text-[10px] tracking-[2px] transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(46,91,255,0.3)]">
+            <a href="#contact" className="hidden sm:inline-flex bg-primary hover:bg-primary/80 text-white px-6 py-2 rounded-full font-bold uppercase text-[10px] tracking-[2px] transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(46,91,255,0.3)]">
               Contact
-            </button>
+            </a>
             
             {/* Mobile Menu Toggle */}
             <button 
@@ -96,9 +96,9 @@ export default function Navbar() {
                     {link.name}
                   </a>
                 ))}
-                <button className="w-full bg-primary text-white py-4 rounded-2xl font-black uppercase tracking-[2px] mt-4">
+                <a href="#contact" className="w-full inline-flex items-center justify-center bg-primary text-white py-4 rounded-2xl font-black uppercase tracking-[2px] mt-4">
                   Contact Us
-                </button>
+                </a>
               </div>
             </div>
           </motion.div>

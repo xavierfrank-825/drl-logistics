@@ -10,7 +10,7 @@ import gc2404 from './assets/gc2404.jpg';
 import ygc501 from './assets/ygc501.jpg';
 import ygc501b from './assets/ygc501b.jpg';
 // import sourcing from './assets/sourcing.jpg';
-import Expansions from './assets/expansions.jpg';
+import Expansions from './assets/expansions-img.jpg';
 import lifestyle from './assets/lifestyle.jpg';
 import ecosystem from './assets/ecosystem.jpg';
 import Shift from './assets/Shift.jpg';
