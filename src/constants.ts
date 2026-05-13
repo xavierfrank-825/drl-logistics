@@ -20,7 +20,7 @@ import sourcing from './assets/sourcing.jpg';
 import logistics from './assets/logistics.jpg';
 import process from './assets/process.jpg';
 import clients from './assets/clients.jpg';
-import focus from './assets/Focus.jpg'; 
+import focus from './assets/focus.jpg'; 
 
 
 export const PRODUCTS: Product[] = [
