@@ -16,15 +16,15 @@ export default function Contact() {
               </h2>
               
               <div className="space-y-6 md:space-y-8 max-w-md mx-auto lg:mx-0">
-                <div className="flex items-center gap-4 md:gap-6 group cursor-pointer justify-center lg:justify-start">
-                  <div className="w-12 h-12 md:w-14 md:h-14 glass rounded-xl md:rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                    <Mail size={20} />
-                  </div>
-                  <div className="text-left">
-                    <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-[2px] text-muted-foreground">Email Us</p>
-                    <p className="text-lg md:text-xl font-bold">contact@dlrlogs.com</p>
-                  </div>
+                <a href="mailto:dlrlogisticsblr@gmail.com" className="flex items-center gap-4 md:gap-6 group justify-center lg:justify-start transition-all duration-300 hover:opacity-90">
+                <div className="w-12 h-12 md:w-14 md:h-14 glass rounded-xl md:rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <Mail size={20} />
                 </div>
+                <div className="text-left">
+                  <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-[2px] text-muted-foreground">Email Us</p>
+                  <p className="text-lg md:text-xl font-bold">dlrlogisticsblr@gmail.com</p>
+                </div>
+              </a>
 
                 <div className="flex items-center gap-4 md:gap-6 group cursor-pointer justify-center lg:justify-start">
                   <div className="w-12 h-12 md:w-14 md:h-14 glass rounded-xl md:rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">

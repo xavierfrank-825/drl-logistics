@@ -20,7 +20,7 @@ import sourcing from './assets/sourcing.jpg';
 import logistics from './assets/logistics.jpg';
 import process from './assets/process.jpg';
 import clients from './assets/clients.jpg';
-import focus from './assets/focus.jpg'; 
+import focus from './assets/Focus.jpg'; 
 
 
 export const PRODUCTS: Product[] = [
@@ -37,26 +37,31 @@ export const MARKET_OPPORTUNITIES: MarketOpportunity[] = [
   {
     title: 'Expansion',
     description: 'The gaming industry is rapidly scaling across global markets, creating sustained demand for gaming infrastructure and accessories.',
+    icon: 'Globe',
     image: Expansions,
   },
   {
     title: 'Lifestyle',
     description: 'Increasing screen time and extended gaming or work sessions are driving the need for ergonomic and comfort-focused seating solutions.',
+    icon: 'User',
     image: lifestyle,
   },
   {
     title: 'Ecosystem',
     description: 'The rise of esports, gaming cafés, and personalized gaming setups is fueling consistent demand for high-quality gaming chairs.',
+    icon: 'Gamepad2',
     image: ecosystem,
   },
   {
     title: 'Shift',
     description: 'The hybrid work culture has significantly increased the adoption of ergonomic chairs for both professional and personal use.',
+    icon: 'Laptop',
     image: Shift,
   },
   {
     title: 'Opportunity',
     description: 'A strong B2B resale market with high-volume purchasing potential, offering scalable and profitable business opportunities.',
+    icon: 'TrendingUp',
     image: oppurnity,
   },
 ];
